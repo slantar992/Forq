@@ -4,7 +4,8 @@ namespace Slantar.Forq
 {
     public partial class Forq
     {
-        public static List<TResult> Cast<TResult>(this List<object> list)
+        public static List<TResult> Cast<TResult>(
+            this List<object> list)
         {
             EvaluateNull(list);
             List<TResult> result = new List<TResult>(list.Count);

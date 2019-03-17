@@ -4,7 +4,9 @@ namespace Slantar.Forq
 {
     public partial class Forq
     {
-        public static TSource ElementAt<TSource>(this List<TSource> source, int index)
+        public static TSource ElementAt<TSource>(
+            this List<TSource> source,
+            int index)
         {
             EvaluateNull(source);
 

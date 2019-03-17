@@ -4,7 +4,8 @@ namespace Slantar.Forq
 {
     public partial class Forq
     {
-        public static List<TSource> Distict<TSource>(this List<TSource> source)
+        public static List<TSource> Distinct<TSource>(
+            this List<TSource> source)
         {
             EvaluateNull(source);
             List<TSource> result = new List<TSource>();
@@ -20,7 +21,9 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static List<TSource> Distinct<TSource>(this List<TSource> source, IEqualityComparer<TSource> comparer)
+        public static List<TSource> Distinct<TSource>(
+            this List<TSource> source,
+            IEqualityComparer<TSource> comparer)
         {
             EvaluateNull(source);
             List<TSource> result = new List<TSource>();

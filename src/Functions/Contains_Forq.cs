@@ -4,14 +4,19 @@ namespace Slantar.Forq
 {
     public partial class Forq
     {
-        public static bool Contains<TSource>(this List<TSource> source, TSource value)
+        public static bool Contains<TSource>(
+            this List<TSource> source,
+            TSource value)
         {
             EvaluateNull(source);
 
             return source.Contains(value);
         }
 
-        public static bool Contains<TSource>(this List<TSource> source, TSource value, IEqualityComparer<TSource> comparer)
+        public static bool Contains<TSource>(
+            this List<TSource> source,
+            TSource value,
+            IEqualityComparer<TSource> comparer)
         {
             EvaluateNull(source, comparer);
 

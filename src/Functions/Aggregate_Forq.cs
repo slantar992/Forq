@@ -5,24 +5,50 @@ namespace Slantar.Forq
 {
     public partial class Forq
     {
-        public static TResult Aggregate<TSource, TAccumulate, TResult>(this List<TSource> source, TAccumulate seed, Func<TAccumulate, TSource, TAccumulate> func, Func<TAccumulate, TResult> resultSelector)
-        {
-            EvaluateNull(resultSelector);
 
-            return resultSelector(Aggregate(source, seed, func));
+        public static TSource Aggregate<TSource>(
+            this List<TSource> source,
+            Func<TSource, TSource, TSource> func)
+        {
+            EvaluateNull(source);
+            EvaluateEmptyList(source);
+
+            return _IterateAggregation(source, source[0], func, 1);
         }
 
-        public static TAccumulate Aggregate<TSource, TAccumulate>(this List<TSource> source, Func<TAccumulate, TSource, TAccumulate> func)
+        public static TAccumulate Aggregate<TSource, TAccumulate>(
+            this List<TSource> source,
+            TAccumulate seed,
+            Func<TAccumulate, TSource, TAccumulate> func)
         {
-            return Aggregate(source, default(TAccumulate), func);
+            EvaluateNull(source);
+            EvaluateEmptyList(source);
+
+            return _IterateAggregation(source, seed, func);
         }
 
-        public static TAccumulate Aggregate<TSource, TAccumulate>(this List<TSource> source, TAccumulate seed, Func<TAccumulate, TSource, TAccumulate> func)
+        public static TResult Aggregate<TSource, TAccumulate, TResult>(
+            this List<TSource> source,
+            TAccumulate seed,
+            Func<TAccumulate, TSource, TAccumulate> func,
+            Func<TAccumulate, TResult> resultSelector)
         {
-            EvaluateNull(source, func);
+            EvaluateNull(source, resultSelector);
+            EvaluateEmptyList(source);
+
+            return resultSelector(_IterateAggregation(source, seed, func));
+        }
+
+        private static TAccumulate _IterateAggregation<TSource, TAccumulate>(
+            List<TSource> source,
+            TAccumulate seed,
+            Func<TAccumulate, TSource, TAccumulate> func,
+            int firstIndex = 0)
+        {
+            EvaluateNull(func);
 
             TAccumulate result = seed;
-            for (int i = 0; i < source.Count; i++)
+            for (int i = firstIndex; i < source.Count; i++)
             {
                 result = func(result, source[i]);
             }

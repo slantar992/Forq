@@ -5,7 +5,8 @@ namespace Slantar.Forq
 {
     public partial class Forq
     {
-        public static int Count<TSource>(this List<TSource> source)
+        public static int Count<TSource>(
+            this List<TSource> source)
         {
             EvaluateNull(source);
 

@@ -7,7 +7,8 @@ namespace Slantar.Forq
     public static partial class Forq
     {
         //float "Average" functions
-        public static float Average(this List<float> source)
+        public static float Average(
+            this List<float> source)
         {
             EvaluateNull(source);
             EvaluateEmptyList(source);
@@ -15,7 +16,8 @@ namespace Slantar.Forq
             return Sum(source) / source.Count;
         }
         
-        public static float? Average(this List<float?> source)
+        public static float? Average(
+            this List<float?> source)
         {
             EvaluateNull(source);
             EvaluateEmptyList(source);
@@ -23,7 +25,9 @@ namespace Slantar.Forq
             return Sum(source) / source.Count;
         }
 
-        public static float Average<TSource>(this List<TSource> source, Func<TSource, float> selector)
+        public static float Average<TSource>(
+            this List<TSource> source,
+            Func<TSource, float> selector)
         {
             EvaluateNull(source, selector);
             EvaluateEmptyList(source);
@@ -31,7 +35,9 @@ namespace Slantar.Forq
             return Sum(source, selector) / source.Count;
         }
 
-        public static float? Average<TSource>(this List<TSource> source, Func<TSource, float?> selector)
+        public static float? Average<TSource>(
+            this List<TSource> source,
+            Func<TSource, float?> selector)
         {
             EvaluateNull(source, selector);
             EvaluateEmptyList(source);
@@ -40,7 +46,8 @@ namespace Slantar.Forq
         }
 
         //double "Average" functions
-        public static double? Average(this List<double?> source)
+        public static double? Average(
+            this List<double?> source)
         {
             EvaluateNull(source);
             EvaluateEmptyList(source);
@@ -48,7 +55,8 @@ namespace Slantar.Forq
             return Sum(source) / source.Count;
         }
 
-        public static double Average(this List<double> source)
+        public static double Average(
+            this List<double> source)
         {
             EvaluateNull(source);
             EvaluateEmptyList(source);
@@ -56,7 +64,8 @@ namespace Slantar.Forq
             return Sum(source) / source.Count;
         }
         
-        public static double Average(this List<int> source)
+        public static double Average(
+            this List<int> source)
         {
             EvaluateNull(source);
             EvaluateEmptyList(source);
@@ -64,7 +73,8 @@ namespace Slantar.Forq
             return Sum(source) / source.Count;
         }
 
-        public static double Average(this List<long> source)
+        public static double Average(
+            this List<long> source)
         {
             EvaluateNull(source);
             EvaluateEmptyList(source);
@@ -72,7 +82,9 @@ namespace Slantar.Forq
             return Sum(source) / source.Count;
         }
 
-        public static double Average<TSource> (this List<TSource> source, Func<TSource, int?> selector)
+        public static double Average<TSource> (
+            this List<TSource> source,
+            Func<TSource, int?> selector)
         {
             EvaluateNull(source, selector);
             EvaluateEmptyList(source);
@@ -80,7 +92,9 @@ namespace Slantar.Forq
             return (double) Sum(source, selector) / source.Count;
         }
 
-        public static double? Average<TSource>(this List<TSource> source, Func<TSource, long?> selector)
+        public static double? Average<TSource>(
+            this List<TSource> source,
+            Func<TSource, long?> selector)
         {
             EvaluateNull(source, selector);
             EvaluateEmptyList(source);
@@ -88,7 +102,9 @@ namespace Slantar.Forq
             return Sum(source, selector) / source.Count;
         }
 
-        public static double? Average<TSource>(this List<TSource> source, Func<TSource, double?> selector)
+        public static double? Average<TSource>(
+            this List<TSource> source,
+            Func<TSource, double?> selector)
         {
             EvaluateNull(source, selector);
             EvaluateEmptyList(source);
@@ -96,7 +112,9 @@ namespace Slantar.Forq
             return Sum(source, selector) / source.Count;
         }
 
-        public static double Average<TSource>(this List<TSource> source, Func<TSource, long> selector)
+        public static double Average<TSource>(
+            this List<TSource> source,
+            Func<TSource, long> selector)
         {
             EvaluateNull(source, selector);
             EvaluateEmptyList(source);
@@ -104,7 +122,9 @@ namespace Slantar.Forq
             return Sum(source, selector) / source.Count;
         }
 
-        public static double Average<TSource>(this List<TSource> source, Func<TSource, int> selector)
+        public static double Average<TSource>(
+            this List<TSource> source,
+            Func<TSource, int> selector)
         {
             EvaluateNull(source, selector);
             EvaluateEmptyList(source);
@@ -112,7 +132,9 @@ namespace Slantar.Forq
             return Sum(source, selector) / source.Count;
         }
 
-        public static double Average<TSource>(this List<TSource> source, Func<TSource, double> selector)
+        public static double Average<TSource>(
+            this List<TSource> source,
+            Func<TSource, double> selector)
         {
             EvaluateNull(source, selector);
             EvaluateEmptyList(source);
@@ -121,7 +143,8 @@ namespace Slantar.Forq
         }
 
         //decimal "Average" function
-        public static decimal Average(this List<decimal> source)
+        public static decimal Average(
+            this List<decimal> source)
         {
             EvaluateNull(source);
             EvaluateEmptyList(source);
@@ -129,7 +152,8 @@ namespace Slantar.Forq
             return Sum(source) / source.Count;
         }
 
-        public static decimal? Average(this List<decimal?> source)
+        public static decimal? Average(
+            this List<decimal?> source)
         {
             EvaluateNull(source);
             EvaluateEmptyList(source);
@@ -137,7 +161,9 @@ namespace Slantar.Forq
             return Sum(source) / source.Count;
         }
 
-        public static decimal? Average<TSource>(this List<TSource> source, Func<TSource, decimal?> selector)
+        public static decimal? Average<TSource>(
+            this List<TSource> source,
+            Func<TSource, decimal?> selector)
         {
             EvaluateNull(source, selector);
             EvaluateEmptyList(source);
@@ -145,7 +171,9 @@ namespace Slantar.Forq
             return Sum(source, selector) / source.Count;
         }
 
-        public static decimal Average<TSource>(this List<TSource> source, Func<TSource, decimal> selector)
+        public static decimal Average<TSource>(
+            this List<TSource> source,
+            Func<TSource, decimal> selector)
         {
             EvaluateNull(source, selector);
             EvaluateEmptyList(source);

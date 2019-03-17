@@ -7,7 +7,8 @@ namespace Slantar.Forq
     {
 
         //int "Sum" functions
-        public static int? Sum(this List<int?> source)
+        public static int? Sum(
+            this List<int?> source)
         {
             EvaluateNull(source);
 
@@ -23,7 +24,8 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static int Sum(this List<int> source)
+        public static int Sum(
+            this List<int> source)
         {
             EvaluateNull(source);
 
@@ -37,7 +39,9 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static int Sum<TSource>(this List<TSource> source, Func<TSource, int> selector)
+        public static int Sum<TSource>(
+            this List<TSource> source,
+            Func<TSource, int> selector)
         {
             EvaluateNull(source);
 
@@ -51,7 +55,9 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static int? Sum<TSource>(this List<TSource> source, Func<TSource, int?> selector)
+        public static int? Sum<TSource>(
+            this List<TSource> source,
+            Func<TSource, int?> selector)
         {
             EvaluateNull(source);
 
@@ -66,7 +72,8 @@ namespace Slantar.Forq
         }
 
         //float "Sum" functions
-        public static float? Sum(this List<float?> source)
+        public static float? Sum(
+            this List<float?> source)
         {
             EvaluateNull(source);
 
@@ -82,7 +89,8 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static float Sum(this List<float> source)
+        public static float Sum(
+            this List<float> source)
         {
             EvaluateNull(source);
 
@@ -96,7 +104,9 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static float Sum<TSource>(this List<TSource> source, Func<TSource, float> selector)
+        public static float Sum<TSource>(
+            this List<TSource> source,
+            Func<TSource, float> selector)
         {
             EvaluateNull(source, selector);
 
@@ -110,7 +120,9 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static float? Sum<TSource>(this List<TSource> source, Func<TSource, float?> selector)
+        public static float? Sum<TSource>(
+            this List<TSource> source,
+            Func<TSource, float?> selector)
         {
             EvaluateNull(source);
 
@@ -125,7 +137,8 @@ namespace Slantar.Forq
         }
 
         //long "Sum" functions
-        public static long? Sum(this List<long?> source)
+        public static long? Sum(
+            this List<long?> source)
         {
             EvaluateNull(source);
 
@@ -141,7 +154,8 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static long Sum(this List<long> source)
+        public static long Sum(
+            this List<long> source)
         {
             EvaluateNull(source);
 
@@ -155,7 +169,9 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static long Sum<TSource>(this List<TSource> source, Func<TSource, long> selector)
+        public static long Sum<TSource>(
+            this List<TSource> source,
+            Func<TSource, long> selector)
         {
             EvaluateNull(source);
 
@@ -169,7 +185,9 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static long? Sum<TSource>(this List<TSource> source, Func<TSource, long?> selector)
+        public static long? Sum<TSource>(
+            this List<TSource> source,
+            Func<TSource, long?> selector)
         {
             EvaluateNull(source);
 
@@ -184,7 +202,8 @@ namespace Slantar.Forq
         }
 
         //double "Sum" functions
-        public static double? Sum(this List<double?> source)
+        public static double? Sum(
+            this List<double?> source)
         {
             EvaluateNull(source);
 
@@ -200,7 +219,8 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static double Sum(this List<double> source)
+        public static double Sum(
+            this List<double> source)
         {
             EvaluateNull(source);
 
@@ -214,7 +234,9 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static double? Sum<TSource>(this List<TSource> source, Func<TSource, double?> selector)
+        public static double? Sum<TSource>(
+            this List<TSource> source,
+            Func<TSource, double?> selector)
         {
             EvaluateNull(source);
 
@@ -228,7 +250,9 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static double Sum<TSource>(this List<TSource> source, Func<TSource, double> selector)
+        public static double Sum<TSource>(
+            this List<TSource> source,
+            Func<TSource, double> selector)
         {
             EvaluateNull(source);
 
@@ -244,7 +268,8 @@ namespace Slantar.Forq
         }
 
         //decimal "Sum" functions
-        public static decimal Sum(this List<decimal> source)
+        public static decimal Sum(
+            this List<decimal> source)
         {
             EvaluateNull(source);
 
@@ -258,7 +283,8 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static decimal? Sum(this List<decimal?> source)
+        public static decimal? Sum(
+            this List<decimal?> source)
         {
             EvaluateNull(source);
 
@@ -274,7 +300,9 @@ namespace Slantar.Forq
             return result;
         }
         
-        public static decimal? Sum<TSource>(this List<TSource> source, Func<TSource, decimal?> selector)
+        public static decimal? Sum<TSource>(
+            this List<TSource> source,
+            Func<TSource, decimal?> selector)
         {
             EvaluateNull(source);
 
@@ -288,7 +316,9 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static decimal Sum<TSource>(this List<TSource> source, Func<TSource, decimal> selector)
+        public static decimal Sum<TSource>(
+            this List<TSource> source,
+            Func<TSource, decimal> selector)
         {
             EvaluateNull(source);
 

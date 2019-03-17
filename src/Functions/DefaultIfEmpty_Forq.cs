@@ -4,7 +4,9 @@ namespace Slantar.Forq
 {
     public partial class Forq
     {
-        public static List<TSource> DefaultIfEmpty<TSource>(this List<TSource> source, TSource defaultValue)
+        public static List<TSource> DefaultIfEmpty<TSource>(
+            this List<TSource> source,
+            TSource defaultValue)
         {
             if (source == null)
             {

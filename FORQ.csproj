@@ -1,0 +1,146 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11007772-06BA-4367-95CC-872694ED94E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>FORQ</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Slantar.FORQ</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\09\79f2766f6b6e5b1f079be009534d56e267d282" />
+    <None Include=".git\objects\0b\0eddd6ac7ec1038de46978b0ff2713279c0a45" />
+    <None Include=".git\objects\0b\dfe205c56607790d24970ea5b70db7ca23902d" />
+    <None Include=".git\objects\0c\dc4bb0bbf1ce981f254ce602009022bcf90c1f" />
+    <None Include=".git\objects\18\33713371b9d8fd515f4537e4e4c2515c31e1b1" />
+    <None Include=".git\objects\19\32233fb3ee7e3f17647adcce1619b79f480912" />
+    <None Include=".git\objects\19\b96389935135a5b46f149dd4512fcc754c40c6" />
+    <None Include=".git\objects\1b\1a4597ecdf671c850cd052d0a9ac894d70cada" />
+    <None Include=".git\objects\26\1eeb9e9f8b2b4b0d119366dda99c6fd7d35c64" />
+    <None Include=".git\objects\36\e3fa175c9a276e4512a4a155c73e43dd40750c" />
+    <None Include=".git\objects\37\484ee452fd9ec7f32f03a71cf7527b871dff5e" />
+    <None Include=".git\objects\45\401697a086ab3ee00180edc5939369b5142f35" />
+    <None Include=".git\objects\49\8c4cf5a21e8a5941233d2d2ae86de27e1ca3ad" />
+    <None Include=".git\objects\49\d87086a61005e7202f405c81419b1a061e7416" />
+    <None Include=".git\objects\4b\e09cfd0c4b4f9b56a2033fc1b25c86a9d49b90" />
+    <None Include=".git\objects\4e\96f7397ae47bff68e169883c462210dbe21b8e" />
+    <None Include=".git\objects\60\8316951bc1e0c92b1fc454defc87806c2981ab" />
+    <None Include=".git\objects\7e\7b2952d58e457980379883edab830079f15336" />
+    <None Include=".git\objects\82\d4849cd982556360499098b00a31fa0c4ccf46" />
+    <None Include=".git\objects\89\02b8b3a3acc8c6139a4ffe69e257b0cb94ac07" />
+    <None Include=".git\objects\89\b6a0d1d0f6ba0eb6443afbbaf5b0790bb9fcc0" />
+    <None Include=".git\objects\89\f823ce961f1f14fd1798098a38fb83a937c1c9" />
+    <None Include=".git\objects\8f\57a99980891ccc68701b94b94342f7ae0e02d6" />
+    <None Include=".git\objects\a6\b167991cefcd1d453a6b2faa49a884d93fdaf4" />
+    <None Include=".git\objects\c4\5999319916a2fd856e849621662aa47c063d11" />
+    <None Include=".git\objects\d3\aba2d8e6041070bd6d48977907d99a98a83ebd" />
+    <None Include=".git\objects\d9\4b9ce24edcbe27d25c1f81e72b7807b47e7e08" />
+    <None Include=".git\objects\db\edc273bf8c275a39ed64ccb793fa166fd9f7a9" />
+    <None Include=".git\objects\df\b3acc2874d6fe2646d8f243083d7044f4f0047" />
+    <None Include=".git\objects\e9\84ca8f03668050e6511a2a7dd518ad259dfbb4" />
+    <None Include=".git\objects\ec\8dfa1268802d5c64cf188ed6d10609e2711f1c" />
+    <None Include=".git\objects\ed\4e8f812ba9d93ab7572ce06698217d4ee498d4" />
+    <None Include=".git\objects\f6\83917693c6727c6d082b6aaf15d5e68661256b" />
+    <None Include=".git\objects\fb\5fa62c1af6dee2a4401877a32b22d7b2e10243" />
+    <None Include=".git\objects\fe\0c4f81843c735a0315ecb961361cbfd84ae870" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".git\sourcetreeconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Classes\Group.cs" />
+    <Compile Include="src\Functions\Aggregate_Forq.cs" />
+    <Compile Include="src\Functions\All_Forq.cs" />
+    <Compile Include="src\Functions\Any_Forq.cs" />
+    <Compile Include="src\Functions\Append_Forq.cs" />
+    <Compile Include="src\Functions\AsEnumerable_Forq.cs" />
+    <Compile Include="src\Functions\Auxiliar_Forq.cs" />
+    <Compile Include="src\Functions\Average_Forq.cs" />
+    <Compile Include="src\Functions\Cast_Forq.cs" />
+    <Compile Include="src\Functions\Concat_Forq.cs" />
+    <Compile Include="src\Functions\Contains_Forq.cs" />
+    <Compile Include="src\Functions\Count_Forq.cs" />
+    <Compile Include="src\Functions\DefaultIfEmpty_Forq.cs" />
+    <Compile Include="src\Functions\Distinct_Forq.cs" />
+    <Compile Include="src\Functions\ElementAtOrDefault_Forq.cs" />
+    <Compile Include="src\Functions\ElementAt_Forq.cs" />
+    <Compile Include="src\Functions\Empty_Forq.cs" />
+    <Compile Include="src\Functions\Except_Forq.cs" />
+    <Compile Include="src\Functions\FirstOrDefault_Forq.cs" />
+    <Compile Include="src\Functions\First_Forq.cs" />
+    <Compile Include="src\Functions\GroupBy_Forq.cs" />
+    <Compile Include="src\Functions\GroupJoin_Forq.cs" />
+    <Compile Include="src\Functions\Intersect_Forq.cs" />
+    <Compile Include="src\Functions\Select_Forq.cs" />
+    <Compile Include="src\Functions\Sum_Forq.cs" />
+    <Compile Include="src\Interfaces\IGrouping.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\FORQ\v15\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

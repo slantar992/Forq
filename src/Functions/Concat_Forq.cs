@@ -4,7 +4,9 @@ namespace Slantar.Forq
 {
     public partial class Forq
     {
-        public static List<TSource> Concat<TSource>(this List<TSource> first, List<TSource> second)
+        public static List<TSource> Concat<TSource>(
+            this List<TSource> first,
+            List<TSource> second)
         {
             EvaluateNull(first, second);
 

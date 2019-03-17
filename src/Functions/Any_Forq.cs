@@ -5,7 +5,9 @@ namespace Slantar.Forq
 {
     public static partial class Forq
     {
-        public static bool Any<TSource>(this List<TSource> source, Func<TSource, bool> predicate)
+        public static bool Any<TSource>(
+            this List<TSource> source,
+            Func<TSource, bool> predicate)
         {
             EvaluateNull(source, predicate);
 

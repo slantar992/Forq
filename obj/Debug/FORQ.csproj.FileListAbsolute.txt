@@ -1,0 +1,6 @@
+F:\Repos\FORQ\bin\Debug\FORQ.dll
+F:\Repos\FORQ\bin\Debug\FORQ.pdb
+F:\Repos\FORQ\obj\Debug\FORQ.csproj.CoreCompileInputs.cache
+F:\Repos\FORQ\obj\Debug\FORQ.dll
+F:\Repos\FORQ\obj\Debug\FORQ.pdb
+F:\Repos\FORQ\obj\Debug\FORQ.csprojAssemblyReference.cache

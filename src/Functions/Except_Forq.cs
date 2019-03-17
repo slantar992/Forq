@@ -4,7 +4,9 @@ namespace Slantar.Forq
 {
     public partial class Forq
     {
-        public static List<TSource> Except<TSource>(this List<TSource> first, List<TSource> second)
+        public static List<TSource> Except<TSource>(
+            this List<TSource> first,
+            List<TSource> second)
         {
             EvaluateNull(first, second);
 
@@ -21,7 +23,10 @@ namespace Slantar.Forq
             return result;
         }
 
-        public static List<TSource> Except<TSource>(this List<TSource> first, List<TSource> second, IEqualityComparer<TSource> comparer)
+        public static List<TSource> Except<TSource>(
+            this List<TSource> first,
+            List<TSource> second,
+            IEqualityComparer<TSource> comparer)
         {
             EvaluateNull(first, second, comparer);
 
